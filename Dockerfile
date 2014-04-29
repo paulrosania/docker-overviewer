@@ -15,4 +15,4 @@ ENV VERSION 1.7.9
 RUN wget https://s3.amazonaws.com/Minecraft.Download/versions/${VERSION}/${VERSION}.jar -P ~/.minecraft/versions/${VERSION}/
 
 ENTRYPOINT ["overviewer.py"]
-CMD ["/srv/minecraft/world", "/var/www"]
+CMD ["/srv/minecraft/world", "/usr/local/nginx/html/"]
